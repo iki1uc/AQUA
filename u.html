@@ -1,0 +1,27 @@
+<div class="aqua-vortex"></div>
+
+<style>
+.aqua-vortex {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #00eaff,
+        #0099cc,
+        #005577,
+        #002233,
+        #005577,
+        #0099cc,
+        #00eaff
+    );
+    animation: vortexSpin 3s linear infinite;
+    filter: blur(10px);
+}
+
+@keyframes vortexSpin {
+    0%   { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.05); }
+}
+</style>
