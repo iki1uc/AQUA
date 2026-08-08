@@ -1,0 +1,19 @@
+<div class="aqua-pulse"></div>
+
+<style>
+.aqua-pulse {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00d4ff, #0088cc, #003344);
+    animation: pulseSpin 4s ease-in-out infinite;
+    filter: blur(15px);
+}
+
+@keyframes pulseSpin {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.15); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+</style>
